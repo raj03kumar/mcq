@@ -171,9 +171,9 @@ body {
 
 /* ---------- REVIEW BUTTON ---------- */
 .review-btn {
-  padding: 10px 18px;
-  border-radius: 12px;
-  font-size: 14px;
+  padding: 8px 8px;
+  border-radius: 20px;
+  font-size: 10px;
   background: transparent;
   border: 2px solid var(--review);
   color: var(--review);
@@ -218,11 +218,16 @@ body {
 /* ---------- MOBILE ---------- */
 @media (max-width: 600px) {
   .options {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr); /* 4 in one row */
+    gap: 10px; /* optional: reduce spacing for mobile */
   }
 
   .option {
-    width: 58px;
-    height: 58px;
+    width: 35px;  /* slightly smaller for mobile */
+    height: 35px;
+    font-size: 12px;
+  }
+  html {
+    font-size: 12px;
   }
 }
